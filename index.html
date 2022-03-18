@@ -1,1 +1,48 @@
-temp.com.de
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>temp.com.de</title>
+    <style type="text/css">
+        body {
+            background-color: #1d1d1d;
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrapper {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            max-width: 75%;
+            font-size: 100px;
+            text-align: center;
+            font-family: "Montserrat", sans-serif;
+            color: #540032;
+        }
+
+        .title {
+            background-image: url(https://raw.githubusercontent.com/tiendatdev/temp.com.de/main/temp.com.de.jpg);
+            background-attachment: fixed;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1 class="title">temp.com.de<h1>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js'></script>
+    <script type="text/javascript">
+        var tl = gsap.timeline({ repeat: -1 });
+        tl.to("h1", 30, { backgroundPosition: "-960px 0" });
+    </script>
+</body>
+
+</html>
